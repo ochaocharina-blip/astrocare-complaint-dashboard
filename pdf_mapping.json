@@ -1,0 +1,1196 @@
+[
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Account)",
+    "i": "Customer tidak dapat melakukan login"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Account)",
+    "i": "Customer tidak mendapatkan OTP"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Account)",
+    "i": "Customer tidak dapat melakukan login dikarenakan akun sudah di deactive sebelumnya"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Cart & Order)",
+    "i": "Customer tidak dapat melakukan order"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Cart & Order)",
+    "i": "Customer tidak dapat memilih opsi pengiriman"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Cart & Order)",
+    "i": "Customer tidak dapat menambahkan/mengurangi barang"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Cart & Order)",
+    "i": "Customer tidak dapat klik bayar"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Cart & Order)",
+    "i": "Customer tidak mengetahui jika order adalah Mix Cart"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Cart & Order)",
+    "i": "Opsi pengiriman berubah setelah order dibuat"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Cart & Order)",
+    "i": "Perhitungan harga di keranjang tidak sesuai"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Category & Product Detail Page)",
+    "i": "Customer tidak dapat menemukan produk di halaman category (blank)"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Home)",
+    "i": "Customer tidak dapat membuka aplikasi (stuck di halaman splash screen)"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Home)",
+    "i": "Customer tidak dapat mengakses halaman home screen (Aplikasi force close / crash)"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Home)",
+    "i": "Customer tidak dapat mengklik banner"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Order Detail & Refund)",
+    "i": "Customer tidak dapat melihat status pesanan"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Order Detail & Refund)",
+    "i": "Customer tidak dapat melihat list riwayat pesanan"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Order Detail & Refund)",
+    "i": "Customer tidak mendapatkan refund dari suatu order"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Order Detail & Refund)",
+    "i": "Customer tidak melakukan pengajuan refund"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Order Detail & Refund)",
+    "i": "Customer tidak dapat memberikan tipping kepada driver"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Location)",
+    "i": "Customer tidak dapat set alamat"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Location)",
+    "i": "Customer tidak dapat menemukan alamatnya di Astro"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Location)",
+    "i": "Customer tidak dapat mengubah / edit alamat"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Voucher code usage",
+    "i": "Customer tidak dapat menggunakan voucher"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Voucher code usage",
+    "i": "Customer tidak mendapatkan pwp/gwp"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Voucher code usage",
+    "i": "Kupon tak bisa dipakai / rusak"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Referral code usage",
+    "i": "Customer tidak bisa menggunakan kode voucher refferal"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Referral code usage",
+    "i": "Customer tidak mendapatkan reward dari hasil refferal"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Search)",
+    "i": "Customer tidak dapat melakukan pencarian produk"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Payment)",
+    "i": "Customer melakukan pembayaran namun pesanan tidak diproses (delay callback)"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Payment)",
+    "i": "Customer melakukan pembayaran namun pesanan tidak diproses dan order sudah expired"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Payment)",
+    "i": "Customer melakukan pembayaran namun pesanan tidak diproses dan order sudah dibatalkan (cancelled)"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Payment)",
+    "i": "Customer melakukan dua kali pembayaran di satu order yang sama"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Payment)",
+    "i": "Customer melakukan pembayaran namun pesanan tidak diproses dan dana sudah otomatis direfund (auto refund cases)"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Payment)",
+    "i": "Customer tidak dapat melakukan pembayaran pada halaman E-wallet provider / bank"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Payment)",
+    "i": "Customer tidak dapat melanjutkan pembayaran di aplikasi Astro"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Payment)",
+    "i": "Customer tidak dapat menghubungkan akun E-wallet di app Astro"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Loyalty)",
+    "i": "Customer tidak dapat melakukan redeem barang loyalty"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Loyalty)",
+    "i": "Customer tidak mendapatkan Astro Koin setelah belanja"
+  },
+  {
+    "r": "Tech",
+    "t": "Masalah app / teknis",
+    "a": "Kendala Aplikasi Customer (Loyalty)",
+    "i": "Astro Koin customer tidak dibalikin setelah pesanan di batalkan"
+  },
+  {
+    "r": "Tech",
+    "t": "Indikasi Fraud",
+    "a": "Indikasi Fraud",
+    "i": "Customer tidak dapat menggunakan voucher"
+  },
+  {
+    "r": "Tech",
+    "t": "Indikasi Fraud",
+    "a": "Indikasi Fraud",
+    "i": "Customer tidak dapat menukarkan barang loyalty"
+  },
+  {
+    "r": "Tech",
+    "t": "Indikasi Fraud",
+    "a": "Indikasi Fraud (False Positive)",
+    "i": "Customer tidak dapat menggunakan voucher"
+  },
+  {
+    "r": "Tech",
+    "t": "Indikasi Fraud",
+    "a": "Indikasi Fraud (False Positive)",
+    "i": "Customer tidak dapat menukarkan barang loyalty"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kesalahan operasional",
+    "a": "Human error",
+    "i": "Customer terima produk AK tidak sesuai dengan SKU yang dipesan"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kesalahan operasional",
+    "a": "Human error",
+    "i": "Customer terima produk AK namun ada komponen yang tidak lengkap (sedotan, sambal,kerupuk, cabe rawit,dll)"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kesalahan operasional",
+    "a": "Human error",
+    "i": "Customer terima produk AK namun tidak ada label"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kesalahan operasional",
+    "a": "Human error",
+    "i": "Customer terima produk AK namun salah ukuran cup"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kesalahan operasional",
+    "a": "Human error",
+    "i": "Customer terima prosuk AK namun ada benda lain didalamnya"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kesalahan operasional",
+    "a": "Human error",
+    "i": "Terdapat produk yang tidak diterima customer"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kualitas Produk Astro Kitchen",
+    "a": "Tidak Layak Konsumsi",
+    "i": "Customer terima produk AK dalam keadaan basi /berbau /busuk"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kualitas Produk Astro Kitchen",
+    "a": "Tidak Layak Konsumsi",
+    "i": "Customer terima produk AK dalam keadaan hambar/belum matang /kurang matang"
+  },
+  {
+    "r": "Astro Kitchen",
+    "t": "Kualitas Produk Astro Kitchen",
+    "a": "Tidak Layak Konsumsi",
+    "i": "Customer terima produk AK dalam keadaan tidak higienis (misal ad benda asing di dalam produk AK)"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Busuk / Berjamur / Berbau Menyengat",
+    "i": "Daging buah membusuk, lembek, berbau menyengat, muncul jamur putih / hijau / hitam di permukaan kulit atau disekitar area produk"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Thawing / Mencair",
+    "i": "Produk terindikasi thawing (mencair) yang seharusnya dalam kondisi beku (untuk produk frozen)"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Overripe / Terlalu Matang",
+    "i": "Buah terlalu matang, tekstur lembek dan mudah rusak"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Underripe / Belum Matang",
+    "i": "Buah masih keras, belum bisa dimakan"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Memar / Luka Mekanis",
+    "i": "Produk mengalami kerusakan fisik (memar/lecek/luka) akibat benturan atau tekanan berlebih"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Layu / Tidak Segar / Keriput",
+    "i": "Produk tampak tidak segar / layu saat diterima dengan indikasi perubahan warna dan tekstur seperti daun menjadi menguning"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Kemasan Produk Lolos Vacuum",
+    "i": "Kemasan vakum tidak kedap, menyebabkan udara masuk dan berisiko menurunkan kualitas produk"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Expired / Lewat Tanggal Konsumsi",
+    "i": "Produk diterima dalam kondisi sudah lewat expiry date"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Mendekati Expired ( Masa Simpan Pendek Saat Diterima)",
+    "i": "Produk diterima dalam kondisi barang terlalu dekat dengan expiry date"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Ada Serangga / Hama / Benda Asing",
+    "i": "Ditemukan ulat, semut, plastik, rambut, atau benda asing lain didalam kemasan"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Kotor / Berdebu",
+    "i": "Kondisi produk dengan kondisi kemasan yang kotor / berdebu"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Keracunan Makanan ( Screening )",
+    "i": "Keluhan akibat dugaan konsumsi produk (screening) yang menyebabkan gejala keracunan seperti mual, muntah, atau diare"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Kualitas Barang",
+    "a": "Berat Kurang / Isi Tidak Sesuai (Repack)",
+    "i": "Total berat produk (gram) tidak sesuai label, jumlah qty produk tidak sesuai deskripsi ada proses repack customer"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Sexual Harrasment",
+    "i": "Customer mengeluh jika driver merayu customer"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Sexual Harrasment",
+    "i": "Customer mengeluhkan jika driver chat/call diluar pemesanan mengarah ke sexual harrasment"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Driver Meminta Uang",
+    "i": "Customer infokan jika driver minta uang parkir"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Driver Meminta Uang",
+    "i": "Customer infokan jika driver minta uang bensin"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Driver Meminta Uang",
+    "i": "Customer infokan jika driver minta uang tip tambahan/minta donasi"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Driver Berkata Tidak Sopan",
+    "i": "Customer mengeluhkan jika driver marah-marah/jutek"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Driver Menggunakan Data Customer",
+    "i": "Customer informasikan jika datanya digunakan untuk pinjol/transaksi lain"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Tindakan Kriminal",
+    "i": "Customer informasikan driver mengambil barang customer"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Attitude",
+    "a": "Driver Berbuat Tidak Sopan",
+    "i": "Customer mengeluhkan jika driver melempar barang"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Quantity sent > quantity ordered",
+    "i": "Customer terima produk berlebih ( yang customer tidak order)"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Kurang barang",
+    "i": "Customer infokan ada produk yang tidak dikirimkan"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Kurang barang",
+    "i": "Customer infokan ada produk yang tidak dikirimkan namun setelah di cek OOS di hub (status fulfilled namun actual partially)"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Freebies (Tidak terkirim)",
+    "i": "Customer infokan tidak terima freebies"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Salah Tempel Invoice",
+    "i": "Customer infokan pesanan yang diterima atas nama customer namun isinya tidak dengan orderan customer atau sebaliknya"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Barang tertukar dengan invoice lain",
+    "i": "Customer infokan pesanan yang diterima bukan atas nama customer (dibawa driver yg beda)"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Barang tertukar dengan Sku lain",
+    "i": "Customer infokan ada produk yang tidak sesuai dengan orderan customer"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Barang tertinggal di tas Driver",
+    "i": "Customer infokan belum terima produk ternyata setelah di cek tertinggal di dalam tas driver"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Komponen tidak lengkap",
+    "i": "Customer infokakan tidak terima tissue galon"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Komponen tidak lengkap",
+    "i": "Customer infokan tidak terima stick es"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Komponen tidak lengkap",
+    "i": "Customer infokan tidak terima sedotan"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Komponen tidak lengkap",
+    "i": "Customer informasikan pesanan dikirimkan tidak menggunakan packaging Astro"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Issue Pengiriman",
+    "a": "Kecelakaan Lalu Lintas",
+    "i": "Customer infokan belum terima pesanan namun setelah di cek driver mengalami kecelakaan lalu lintas"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Issue Pengiriman",
+    "a": "Kecelakaan Lalu Lintas",
+    "i": "Customer infokan Driver menabrak kendaraan customer/orang lain"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Issue Pengiriman",
+    "a": "Driver Salah Drop (Salah kirim orderan karena pooling)",
+    "i": "Customer infokan belum terima pesanan namun status sudah completed setelah di cek driver salah drop karena membawa orderan pooling"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Issue Pengiriman",
+    "a": "Driver Salah Alamat",
+    "i": "Customer infokan belum terima pesanan, driver tidak konfirmasi ke customer dan salah drop pesanan"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Issue Pengiriman",
+    "a": "Pengiriman same day/time slot lebih cepat dari yang dijadwalkan",
+    "i": "Customer infokan pengiriman terlalu cepat dari jadwal yang dipilih customer"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Issue Pengiriman",
+    "a": "Pengiriman terlambat melebihi SLA",
+    "i": "Customer informasikan pengiriman melebihi waktu yang ditentukan"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Produk Rusak Saat Perjalanan",
+    "a": "Produk Rusak Saat Perjalanan",
+    "i": "Customer informasikan ada produk yang rusak setelah di cek produk aman saat pick/pack"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Produk Rusak Saat Perjalanan",
+    "a": "Produk Rusak Saat Perjalanan",
+    "i": "Customer terima produk AK dalam keadaan bocor/pecah/penyok"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Produk Rusak Saat Perjalanan",
+    "a": "Produk Rusak Saat Perjalanan",
+    "i": "Customer informasikan packaging (dus/paper bag) rusak setelah di cek produk aman saat pick/pack"
+  },
+  {
+    "r": "Warehouse",
+    "t": "Barcode",
+    "a": "Warehouse Salah Tempel Barcode",
+    "i": "Customer infokan salah terima produk dan setelah dilakukan pengecekan WH salah tempel barcode"
+  },
+  {
+    "r": "Warehouse",
+    "t": "Barcode",
+    "a": "Produk dari WH tidak tertempel barcode",
+    "i": "Customer infokan salah terima produk dan setelah dilakukan pengecekam WH tidak tempel barcode"
+  },
+  {
+    "r": "Warehouse",
+    "t": "Salah Barang",
+    "a": "Salah Packshot",
+    "i": "Customer yang mengeluhkan gambar pada aplikasi tidak sesuai dengan produk yang diterima"
+  },
+  {
+    "r": "MD",
+    "t": "Salah Barang",
+    "a": "Salah Deskripsi",
+    "i": "Customer yang mengeluhkan deskripsi pada aplikasi tidak sesuai dengan deskripsi/produk yang diterima"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Keracunan Makanan ( Non Screening)",
+    "i": "Customer complaint akibat dugaan konsumsi produk (non screening) yang menyebabkan gejala keracunan seperti mual, muntah, atau diare"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Berat Kurang / Isi Tidak Sesuai",
+    "i": "Total berat produk (gram) tidak sesuai label, jumlah qty produk tidak sesuai deskripsi"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Potongan Tidak Rata / Ukuran Tidak Sesuai",
+    "i": "Customer terima produk dengan ukuran tidak seragam, ada yang kecil sekali dan ada besar"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Tidak Sesuai Ekspektasi Visual (di Foto vs Asli)",
+    "i": "Produk tampak lebih bagus di foto sedangkan aktualnya sangat berbeda"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "ED Tidak Sesuai Expectasi",
+    "i": "Customer terima produk mendekati expired date namun masih sesuai dengan Specbook"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Tidak Enak / Tidak Manis / Rasa Produk Aneh",
+    "i": "Customer terima produk tidak enak / tidak manis / rasa produk aneh"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Produk Tidak Bisa Digunakan",
+    "i": "Customer menerima produk dengan komponen tidak lengkap sehingga tidak bisa digunakan"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Penurunan kualitas bagian dalam – fresh busuk di dalam",
+    "i": "Customer menerima produk fresh dengan kondisi busuk di bagian dalam"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Penurunan kualitas bagian dalam – fresh rasa asam / hambar",
+    "i": "Customer menerima produk fresh dengan rasa asam/kurang manis/hambar"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Penurunan kualitas bagian dalam – fresh belum matang",
+    "i": "Customer menerima produk fresh yang belum matang (tidak bisa dicek secara visual)"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Penurunan kualitas bagian dalam – jamuran / kutuan (Dry)",
+    "i": "Customer menerima produk dry yang jamuran atau ada kutu"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Penurunan kualitas bagian dalam – karatan (Dry)",
+    "i": "Customer menerima produk dry yang berkarat"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Ketidaksesuaian proporsi lemak",
+    "i": "Customer menerima produk daging terlalu banyak lemak"
+  },
+  {
+    "r": "Commercial",
+    "t": "Kesalahan Vendor / Supplier",
+    "a": "Cacat Pabrik / Cacat Produksi ( ada benda asing di dalam kemasan)",
+    "i": "Customer terima produk Cacat Pabrik / Cacat Produksi ( Ada benda asing di dalam kemasan)"
+  },
+  {
+    "r": "Customers",
+    "t": "Customer Request",
+    "a": "Aktivasi akun",
+    "i": "Customer ingin mengaktifkan akun"
+  },
+  {
+    "r": "Customers",
+    "t": "Customer Request",
+    "a": "Nonaktivasi akun",
+    "i": "Customer ingin menonaktifkan akun"
+  },
+  {
+    "r": "Customers",
+    "t": "Customer Request",
+    "a": "Request Perubahan alamat <1km",
+    "i": "Customer ajukan perubahan alamat, dan alamat yang terbaru < 1km"
+  },
+  {
+    "r": "Customers",
+    "t": "Customer Request",
+    "a": "Redelivery",
+    "i": "Customer minta pesanannya dikirim kembali namun status sudah completed (SUPER)"
+  },
+  {
+    "r": "Customers",
+    "t": "Customer Request",
+    "a": "Redelivery",
+    "i": "Customer minta pesanannya dikirim kembali karena status sebelumnya (On Hold)"
+  },
+  {
+    "r": "Customers",
+    "t": "Customer Request",
+    "a": "Request Driver Naik ke lantai tertentu",
+    "i": "Customer minta orderan diantarkan ke lantai 2 atau lebih karena alasan tertentu"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Pencairan Saldo Astro ke rekening/e-wallet",
+    "i": "Customer menanyakan kapan disbursment akan masuk ke rekening / e- wallet customer"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Payment",
+    "i": "Customer tanyakan cara melakukan pembayaran"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Payment",
+    "i": "Customer tanyakan cara ubah metode pembayaran"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Payment",
+    "i": "Customer tanyakan jenis-jenis pembayaran di aplikasi Astro"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Payment",
+    "i": "Customer request untuk melakukan penambahan metode pembayaran"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Refund",
+    "i": "Customer tanyakan cara mengajukan refund atau TnC refund atau penukaran barang"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Refund",
+    "i": "Customer menanyakan metode refund di Astro"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Download invoice pdf",
+    "i": "Customer tanyakan minta invoice pdf untuk kepentingan reimburse"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Pengiriman",
+    "i": "Customer informasikan detail alamat pengiriman"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Pengiriman",
+    "i": "Customer menanyakan apakah perubahan pesanan masih dapat dilakukan? (mengurangi / menambahkan pesanan)"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Pengiriman",
+    "i": "Customer menanyakan apakah dapat mengubah lokasi pengiriman setelah pesanan sudah dibuat?"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Pengiriman",
+    "i": "Customer menanyakan cara perubahan estimasi pengiriman/dikirimkan di waktu tertentu"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Pengiriman",
+    "i": "Customer menanyakan cara mengubah alamat pengiriman"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Pengiriman",
+    "i": "Customer tanyakan apakah bisa pesanan untuk jam pulang kerja / jam tertentu (schedule / time slot)"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Menanyakan Status Pesanan",
+    "i": "Customer menanyakan status pesanan ketika driver sedang dalam pengiriman"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Menanyakan Status Pesanan",
+    "i": "Customer tanyakan kenapa pesanan belum tiba namun status sudah arrived"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Menanyakan Status Pesanan",
+    "i": "Customer menanyakan status pesanan ketika pesanan sedang di proses atau upcoming order"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Menanyakan Status Pesanan",
+    "i": "Customer menanyakan status pesanan dikarenakan adanya keterlambatan"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Menanyakan Status Pesanan",
+    "i": "Customer menanyakan kenapa status pesanan dibatalkan (dikarenakan fraud)"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Menanyakan Status Pesanan",
+    "i": "Customer menanyakan kenapa status pesanan dibatalkan (dikarenakan cust sulit dihubungi)"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Kendala pada pengiriman",
+    "i": "Customer merasa belum menerima produknya namun alamat sudah sesuai (dititipkan di satpam, ART, dll)"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Kendala pada pengiriman",
+    "i": "Customer yang merasa blm terima satu/beberapa produk, namun setelah cek cctv sudah dikirimkan / Ternyata nyelip di packaging"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Kendala pada pengiriman",
+    "i": "Customer belum terima pesanan karena Customer salah meletakkan titik alamat"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Kendala pada pengiriman",
+    "i": "Customer belum terima pesanan, customer sudah meletakkan titik lokasi yang tepat namun titik lokasi tidak akurat"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Lokasi",
+    "i": "Lokasi yang sudah tercover oleh astro dimana saja"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Kerjasama dengan Astro",
+    "i": "Customer tanyakan Cara jadi brand astro"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Kerjasama dengan Astro",
+    "i": "Customer tanyakan Cara jadi driver/ mitra astro"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Produk",
+    "i": "Customer yang menanyakan ED dari suatu produk"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Produk",
+    "i": "Cara saji, deskripsi produk, ukuran produk, halal / tidak"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Produk",
+    "i": "Customer menanyakan ketersediaan Produk di Astro"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Driver Lupa Membawa Galon Kosong (AQUA) / Tabung Gas",
+    "i": "Customer infokan jika Galon Aqua / Tabung Kosong, lupa di bawa oleh driver"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Astro Koin",
+    "i": "Customer menanyakan cara mendapatkan Astro Koin"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Astro Koin",
+    "i": "Customer menanyakan cara menggunakan / redeem Astro Koin"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Akun Customer",
+    "i": "Customer tanyakan bagaimana cara mengubah/mengganti No HP/ Nama Akun/Bahasa"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi Aplikasi Astro",
+    "i": "Customer tanyakan cara hapus histrory transaksi customer"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi lanjutan keluhan sebelumnya",
+    "i": "Customer menanyakan kelanjutan case sebelumnya"
+  },
+  {
+    "r": "Customers",
+    "t": "Layanan Informasi Customer",
+    "a": "Informasi lanjutan keluhan sebelumnya",
+    "i": "Customer respon closing message"
+  },
+  {
+    "r": "Customers",
+    "t": "Unfinished Chat",
+    "a": "Customer tidak melanjutkan percakapan",
+    "i": "Fulfillment accuracy"
+  },
+  {
+    "r": "Customers",
+    "t": "Unfinished Chat",
+    "a": "Customer tidak melanjutkan percakapan",
+    "i": "Issue Pengiriman"
+  },
+  {
+    "r": "Customers",
+    "t": "Unfinished Chat",
+    "a": "Customer tidak melanjutkan percakapan",
+    "i": "Kualitas barang"
+  },
+  {
+    "r": "Customers",
+    "t": "Unfinished Chat",
+    "a": "Customer tidak melanjutkan percakapan",
+    "i": "Kendala Aplikasi Customer (Payment)"
+  },
+  {
+    "r": "Customers",
+    "t": "Unfinished Chat",
+    "a": "Customer tidak melanjutkan percakapan",
+    "i": "Customer tidak melanjutkan percakapan"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Salah alamat",
+    "i": "Customer tidak bisa menemukan alamatnya secara tepat di peta"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Salah alamat",
+    "i": "Customer lupa mengganti alamat (Ingin ke posisi saat ini)"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Salah alamat",
+    "i": "Customer lupa mengganti alamat (Bukan ke posisi saat ini, ingin ganti ke lokasi lain)"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Berubah pikiran",
+    "i": "Customer ingin menambahkan / mengurangi pesanan setelah order dibuat"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Berubah pikiran",
+    "i": "Customer ingin mengganti waktu pengiriman setelah order dibuat"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Berubah pikiran",
+    "i": "Customer Menunggu Terlalu Lama"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Berubah pikiran",
+    "i": "Customer tidak mengetahui jika order adalah Mix Cart"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Berubah pikiran",
+    "i": "Jumlah Pesanan Customer Tidak Lengkap dan Customer Request Cancel Order (barang masih dihub)"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Customer tidak memiliki Galon atau Tabung Gas Pengganti",
+    "i": "Pesanan dibatalkan dikarenakan tidak ada galon pengganti"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Customer tidak memiliki Galon atau Tabung Gas Pengganti",
+    "i": "Pesanan dibatalkan dikarenakan tidak ada gas pengganti"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Customer Tidak Merasa Memesan",
+    "i": "Customer tidak melakukan pesanan dan tidak ingin menerima pesanan dan request cancellation"
+  },
+  {
+    "r": "Customers",
+    "t": "Cancellation",
+    "a": "Customer Sulit Dihubungi (No Invalid/Tidak aktif)",
+    "i": "Pesanan customer dibatalkan dikarenakan tidak dapat dihubungi ketika driver sampai lokasi sudah menunggu 5 menit"
+  },
+  {
+    "r": "Marketing",
+    "t": "Voucher",
+    "a": "Voucher Loyalty",
+    "i": "Customer belum terima voucher loyalty"
+  },
+  {
+    "r": "Marketing",
+    "t": "Redeem Coin",
+    "a": "Redeem Coin to SKU",
+    "i": "Customer tanyakan kapan loyalti akan diterima karena sudah lebih dari SLA pengiriman"
+  },
+  {
+    "r": "Marketing",
+    "t": "Redeem Coin",
+    "a": "Kualitas barang loyalty",
+    "i": "Customer terima produk loyalty dalam keadaan rusak/ berkarat/ pecah/ tidak berfungsi"
+  },
+  {
+    "r": "Marketing",
+    "t": "Redeem Coin",
+    "a": "Refund Astro Coin",
+    "i": "Refund astro coin belum diterima sudah lebih dari 3x24 jam"
+  },
+  {
+    "r": "Marketing",
+    "t": "Campaign",
+    "a": "Fulfllment Accuracy",
+    "i": "Customer belum terima produk campaign"
+  },
+  {
+    "r": "Marketing",
+    "t": "Voucher",
+    "a": "Referal Code",
+    "i": "SnK Kode Referal"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Sexual Harrasment",
+    "i": "Customer mengeluh jika driver merayu customer"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Sexual Harrasment",
+    "i": "Customer mengeluhkan jika driver chat/call diluar pemesanan mengarah ke sexual harrasment"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Driver Meminta Uang",
+    "i": "Customer infokan jika driver minta uang parkir"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Driver Meminta Uang",
+    "i": "Customer infokan jika driver minta uang bensin"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Driver Meminta Uang",
+    "i": "Customer infokan jika driver minta uang tip tambahan/minta donasi"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Driver Berkata Tidak Sopan",
+    "i": "Customer mengeluhkan jika driver marah-marah/jutek"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Driver Menggunakan Data Customer",
+    "i": "Customer informasikan jika datanya digunakan untuk pinjol/transaksi lain"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Tindakan Kriminal",
+    "i": "Customer informasikan driver mengambil barang customer"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Attitude",
+    "a": "Driver Berbuat Tidak Sopan",
+    "i": "Customer mengeluhkan jika driver melempar barang"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Fulfillment Accuracy",
+    "a": "Kurang barang",
+    "i": "Customer infokan ada produk yang tidak dikirimkan (Kurang 1 koli)"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Fulfillment Accuracy",
+    "a": "Barang tertukar dengan invoice lain",
+    "i": "Customer infokan pesanan yang diterima bukan atas nama customer (driver salah bawa orderan)"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Fulfillment Accuracy",
+    "a": "Barang tertinggal di tas Driver",
+    "i": "Customer infokan belum terima produk ternyata setelah di cek tertinggal di dalam tas driver"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Issue Pengiriman",
+    "a": "Kecelakaan Lalu Lintas",
+    "i": "Customer infokan belum terima pesanan namun setelah di cek driver mengalami kecelakaan lalu lintas"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Issue Pengiriman",
+    "a": "Kecelakaan Lalu Lintas",
+    "i": "Customer infokan Driver menabrak kendaraan customer/orang lain"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Issue Pengiriman",
+    "a": "Driver Salah Alamat",
+    "i": "Customer infokan belum terima pesanan, driver tidak konfirmasi ke customer dan salah drop pesanan"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Issue Pengiriman",
+    "a": "Pengiriman terlambat melebihi SLA",
+    "i": "Customer informasikan pengiriman melebihi waktu yang ditentukan"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Produk Rusak Saat Perjalanan",
+    "a": "Produk Rusak Saat Perjalanan",
+    "i": "Customer informasikan ada produk yang rusak setelah di cek produk aman saat pick/pack"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Produk Rusak Saat Perjalanan",
+    "a": "Produk Rusak Saat Perjalanan",
+    "i": "Customer terima produk AK dalam keadaan bocor/pecah/penyok"
+  },
+  {
+    "r": "Driver 3PL",
+    "t": "Produk Rusak Saat Perjalanan",
+    "a": "Produk Rusak Saat Perjalanan",
+    "i": "Customer informasikan packaging Astro rusak setelah di cek produk aman saat pick/pack"
+  },
+  {
+    "r": "Hub Warehouse",
+    "t": "Fulfillment Accuracy",
+    "a": "Barang Tertinggal 1 Koli",
+    "i": "Customer infokan tidak terima produk 1 koli"
+  }
+]
