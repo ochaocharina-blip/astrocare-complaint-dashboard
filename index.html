@@ -2570,8 +2570,10 @@ function renderCompareTab() {
     const alasan = DATA.dims.alasans[r[RIDX.al]];
     if (!alasan || HIDE_OPTS.has(alasan)) continue;
     // Filter cross-classification anomalies: alasan must be valid for selected tipe/role
-    if (tipeValidAlasans && !tipeValidAlasans.has(alasan)) continue;
-    else if (roleValidAlasans && !roleValidAlasans.has(alasan)) continue;
+    if (alasan !== '(kosong)') {
+      if (tipeValidAlasans && !tipeValidAlasans.has(alasan)) continue;
+      else if (roleValidAlasans && !roleValidAlasans.has(alasan)) continue;
+    }
     if (!cByPeriodAlasan[periodLabel]) cByPeriodAlasan[periodLabel] = {};
     cByPeriodAlasan[periodLabel][alasan] = (cByPeriodAlasan[periodLabel][alasan]||0) + r[RIDX.c];
   }
