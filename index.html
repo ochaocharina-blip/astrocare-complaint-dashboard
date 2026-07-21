@@ -941,7 +941,7 @@ function filterRows(filters) {
   const l2Idx = filters.l2 ? DATA.dims.l2_cats.indexOf(filters.l2) : -1;
   const skuAllowed = buildSkuAllowedSet(filters.sku);
   // Strict mapping validation — only when any of role/tipe/alasan filter is active
-  const strict = (filters.r !== null);  // only enforce when role filter active
+  const strict = false; // disabled - was breaking number consistency  // only enforce when role filter active
   const mapValid = strict ? buildMappingValidSets(filters) : null;
   return DATA.rows.filter(r => {
     if (!rMatch(r[RIDX.m], filters.m)) return false;
@@ -1848,13 +1848,7 @@ function render() {
   document.getElementById('roleBreakdownTable').innerHTML = roleHtml || '<tr><td colspan="6" class="muted">Tidak ada data</td></tr>';
 
   // Tipe breakdown (right, compact) - filter to role-valid tipes when role(s) selected (avoid cross-tagging anomalies)
-  let tipeAllowedSet = null;
-  if (filters.r !== null) {
-    tipeAllowedSet = new Set();
-    const _rL = Array.isArray(filters.r) ? filters.r : [filters.r];
-    _rL.forEach(ri => { const s = ROLE_TO_TIPES[DATA.dims.roles[ri]]; if (s) s.forEach(t => tipeAllowedSet.add(t)); });
-    if (tipeAllowedSet.size === 0) tipeAllowedSet = null;
-  }
+  let tipeAllowedSet = null;  // DISABLED - keep numbers matching KPI
   const tipeMap2 = aggCount(rows, RIDX.t);
   const tipeBA = Object.entries(tipeMap2).map(([k,c]) => ({
     label: DATA.dims.tipes[+k], count: c,
@@ -1876,25 +1870,7 @@ function render() {
   document.getElementById('tipeBreakdownTable').innerHTML = tipeHtml || '<tr><td colspan="6" class="muted">Tidak ada data</td></tr>';
 
   // Alasan Complaint Breakdown — filter to role-valid alasans (avoid cross-tagging anomalies)
-  let alasanAllowedSet = null;
-  if (filters.r !== null) {
-    alasanAllowedSet = new Set();
-    const _rLA = Array.isArray(filters.r) ? filters.r : [filters.r];
-    _rLA.forEach(ri => {
-      const tipes = ROLE_TO_TIPES[DATA.dims.roles[ri]] || new Set();
-      tipes.forEach(t => {
-        const alSet = TIPE_TO_ALASANS[t];
-        if (alSet) alSet.forEach(a => alasanAllowedSet.add(a));
-      });
-    });
-    if (alasanAllowedSet.size === 0) alasanAllowedSet = null;
-  }
-  // Also filter by tipe if selected
-  if (filters.t !== null) {
-    const tipeName = DATA.dims.tipes[filters.t];
-    const tipeAlSet = TIPE_TO_ALASANS[tipeName];
-    if (tipeAlSet) alasanAllowedSet = tipeAlSet;
-  }
+  let alasanAllowedSet = null;  // DISABLED - keep numbers matching KPI
   const alasanAgg = aggCount(rows, RIDX.al);
   // Local strict-norm: punct-first then collapse-spaces (fixes en-dash artifact)
   const _normStrict = s => {
@@ -2342,7 +2318,7 @@ function renderCompareTab() {
   const l1Idx_cmp = l1Filter ? DATA.dims.l1_cats.indexOf(l1Filter) : -1;
   const l2Idx_cmp = l2Filter ? DATA.dims.l2_cats.indexOf(l2Filter) : -1;
   // Strict mapping check for Compare tab — drop cross-tagged rows
-  const _cmpStrict = (roleFilter !== null);  // only enforce role→tipe mapping
+  const _cmpStrict = false;  // disabled to keep numbers matching KPI
   const _cmpMapValid = _cmpStrict ? buildMappingValidSets({r: roleFilter, t: tipeFilter, al: alasanFilter}) : null;
   function passesGlobalFilters(r) {
     if (!rMatch(r[RIDX.r], roleFilter)) return false;
@@ -2508,7 +2484,7 @@ function renderCompareTab() {
       const rt = cByPeriodRoleTipe[p]?.[role] || {};
       for (const t in rt) tipesForRole[t] = (tipesForRole[t]||0) + rt[t];
     }
-    const _validTipesForRole = ROLE_TO_TIPES[role]; const sortedTipes = Object.entries(tipesForRole).filter(([t,c]) => c > 0 && !HIDE_OPTS.has(t) && (!_validTipesForRole || _validTipesForRole.has(t))).sort((a,b) => b[1]-a[1]);
+    const sortedTipes = Object.entries(tipesForRole).filter(([t,c]) => c > 0 && !HIDE_OPTS.has(t)).sort((a,b) => b[1]-a[1]);
     for (const [tipe, _total] of sortedTipes) {
       body += '<tr><td style="padding:3px 6px 3px 24px;color:#475569;font-size:11px">↳ ' + tipe + '</td>';
       let l = 0, pr = 0;
@@ -2570,10 +2546,7 @@ function renderCompareTab() {
     const alasan = DATA.dims.alasans[r[RIDX.al]];
     if (!alasan || HIDE_OPTS.has(alasan)) continue;
     // Filter cross-classification anomalies: alasan must be valid for selected tipe/role
-    if (alasan !== '(kosong)') {
-      if (tipeValidAlasans && !tipeValidAlasans.has(alasan)) continue;
-      else if (roleValidAlasans && !roleValidAlasans.has(alasan)) continue;
-    }
+    // (filter cross-class removed - show all alasans to match KPI)
     if (!cByPeriodAlasan[periodLabel]) cByPeriodAlasan[periodLabel] = {};
     cByPeriodAlasan[periodLabel][alasan] = (cByPeriodAlasan[periodLabel][alasan]||0) + r[RIDX.c];
   }
