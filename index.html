@@ -2787,27 +2787,45 @@ function renderCompareTab() {
   }
 
   // ====== Section: IMPACT TO CUSTOMER BREAKDOWN ====== _IMPACT_BREAKDOWN_SECTION_
-  body += '<tr><td colspan="'+(periodList.length+2)+'" style="background:#5b21b6;color:#fff;padding:5px 6px;font-weight:700">Breakdown by Impact to Customer</td></tr>';
+  body += '<tr><td colspan="'+(periodList.length+2)+'" style="background:#5b21b6;color:#fff;padding:5px 6px;font-weight:700">Breakdown by Impact to Customer'
+        + (_impactSrcNote ? '<span style="font-weight:400;font-size:10px;opacity:.85"> — ' + _impactSrcNote + ' (sesuai mapping)</span>' : '')
+        + '</td></tr>';
 
-  // Impact valid untuk alasan yang sedang aktif (ikut logika alasan di atas)
+  // _IMPACT_FOLLOWS_ALASAN_ : impact mengikuti filter Alasan sesuai mapping resmi
   let validImpacts = null;
+  let _impactSrcNote = '';
   if (typeof ALASAN_TO_IMPACTS !== 'undefined') {
-    const _srcAlasans = tipeValidAlasans || roleValidAlasans;
+    let _srcAlasans = null;
+    if (alasanFilter !== null && !(Array.isArray(alasanFilter) && alasanFilter.length === 0)) {
+      // PRIORITAS 1 — filter Alasan aktif: hanya impact milik alasan yang dipilih
+      _srcAlasans = new Set();
+      const _aArr = Array.isArray(alasanFilter) ? alasanFilter : [alasanFilter];
+      _aArr.forEach(ai => { const an = DATA.dims.alasans[ai]; if (an) _srcAlasans.add(an); });
+      _impactSrcNote = 'mengikuti filter Alasan';
+    } else if (tipeValidAlasans) {
+      _srcAlasans = tipeValidAlasans;            // PRIORITAS 2 — filter Tipe
+      _impactSrcNote = 'mengikuti filter Tipe';
+    } else if (roleValidAlasans) {
+      _srcAlasans = roleValidAlasans;            // PRIORITAS 3 — filter Role
+      _impactSrcNote = 'mengikuti filter Role';
+    }
     if (_srcAlasans) {
       validImpacts = new Set();
       _srcAlasans.forEach(a => { const s = ALASAN_TO_IMPACTS[a]; if (s) s.forEach(im => validImpacts.add(im)); });
       if (validImpacts.size === 0) validImpacts = null;
     }
   }
+  const _OUT_OF_MAP = '(Impact di luar mapping alasan ini)';
 
   const cByPeriodImpact = {};
   for (const r of DATA.rows) {
     if (!passesGlobalFilters(r)) continue;
     const pLabel = DATA.dims[periodDim][r[periodIdx]];
     if (!periodList.includes(pLabel)) continue;
-    const impact = DATA.dims.impacts[r[RIDX.im]];
+    let impact = DATA.dims.impacts[r[RIDX.im]];
     if (!impact || HIDE_OPTS.has(impact)) continue;
-    if (validImpacts && !validImpacts.has(impact)) continue;
+    // impact di luar mapping tidak dibuang, dikumpulkan supaya total tetap nyambung
+    if (validImpacts && !validImpacts.has(impact)) impact = _OUT_OF_MAP;
     if (!cByPeriodImpact[pLabel]) cByPeriodImpact[pLabel] = {};
     cByPeriodImpact[pLabel][impact] = (cByPeriodImpact[pLabel][impact]||0) + r[RIDX.c];
   }
@@ -2815,14 +2833,16 @@ function renderCompareTab() {
   for (const p of periodList) {
     for (const im in (cByPeriodImpact[p]||{})) impactTotals[im] = (impactTotals[im]||0) + cByPeriodImpact[p][im];
   }
-  const sortedImpacts = Object.entries(impactTotals).filter(([im,c])=>c>0).sort((a,b)=>b[1]-a[1]).slice(0, 40);
+  let sortedImpacts = Object.entries(impactTotals).filter(([im,c])=>c>0)
+        .sort((a,b)=> (a[0]===_OUT_OF_MAP) - (b[0]===_OUT_OF_MAP) || b[1]-a[1]).slice(0, 41);
   const _impGrand = Object.values(impactTotals).reduce((s,v)=>s+v,0);
   let _impRun = 0;
   for (const [impact, _ti] of sortedImpacts) {
     _impRun += _ti;
     const _cum = _impGrand > 0 ? (_impRun/_impGrand*100).toFixed(1) : '0.0';
     const _short = impact.length > 78 ? impact.slice(0,78) + '…' : impact;
-    body += '<tr><td style="padding:3px 6px;font-size:11px" title="' + impact.replace(/"/g,'&quot;') + '">' + _short
+    const _isOut = (impact === _OUT_OF_MAP);
+    body += '<tr' + (_isOut ? ' style="background:#fef3c7"' : '') + '><td style="padding:3px 6px;font-size:11px' + (_isOut ? ';color:#92400e;font-style:italic' : '') + '" title="' + impact.replace(/"/g,'&quot;') + '">' + _short
           + '<span style="color:#8b5cf6;font-size:9px;margin-left:6px">cum ' + _cum + '%</span></td>';
     let lI = 0, pI = 0;
     for (let i = 0; i < periodList.length; i++) {
