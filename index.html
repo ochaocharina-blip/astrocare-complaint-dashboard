@@ -2786,11 +2786,6 @@ function renderCompareTab() {
     body += '<td class="ctr" style="background:#fef3c7;padding:2px 4px;color:'+gACls+';font-size:11px;font-weight:600">' + (gA>=0?'+':'') + gA + '%</td></tr>';
   }
 
-  // ====== Section: IMPACT TO CUSTOMER BREAKDOWN ====== _IMPACT_BREAKDOWN_SECTION_
-  body += '<tr><td colspan="'+(periodList.length+2)+'" style="background:#5b21b6;color:#fff;padding:5px 6px;font-weight:700">Breakdown by Impact to Customer'
-        + (_impactSrcNote ? '<span style="font-weight:400;font-size:10px;opacity:.85"> — ' + _impactSrcNote + ' (sesuai mapping)</span>' : '')
-        + '</td></tr>';
-
   // _IMPACT_FOLLOWS_ALASAN_ : impact mengikuti filter Alasan sesuai mapping resmi
   let validImpacts = null;
   let _impactSrcNote = '';
@@ -2817,6 +2812,11 @@ function renderCompareTab() {
   }
   const _OUT_OF_MAP = '(Impact di luar mapping alasan ini)';
 
+  // ====== Section: IMPACT TO CUSTOMER BREAKDOWN ====== _IMPACT_BREAKDOWN_SECTION_
+  body += '<tr><td colspan="'+(periodList.length+2)+'" style="background:#5b21b6;color:#fff;padding:5px 6px;font-weight:700">Breakdown by Impact to Customer'
+        + (_impactSrcNote ? '<span style="font-weight:400;font-size:10px;opacity:.85"> — ' + _impactSrcNote + ' (sesuai mapping)</span>' : '')
+        + '</td></tr>';
+
   const cByPeriodImpact = {};
   for (const r of DATA.rows) {
     if (!passesGlobalFilters(r)) continue;
@@ -2829,19 +2829,41 @@ function renderCompareTab() {
     if (!cByPeriodImpact[pLabel]) cByPeriodImpact[pLabel] = {};
     cByPeriodImpact[pLabel][impact] = (cByPeriodImpact[pLabel][impact]||0) + r[RIDX.c];
   }
-  const impactTotals = {};
+  let impactTotals = {};
   for (const p of periodList) {
     for (const im in (cByPeriodImpact[p]||{})) impactTotals[im] = (impactTotals[im]||0) + cByPeriodImpact[p][im];
   }
+  // _IMPACT_REMAINDER_ : sisanya digabung supaya TOTAL section nyambung
+  const _OTHERS = '(Impact lainnya — di luar Top 40)';
+  const _rank = Object.entries(impactTotals)
+        .filter(([im,c]) => c > 0 && im !== _OUT_OF_MAP)
+        .sort((a,b) => b[1]-a[1]);
+  if (_rank.length > 40) {
+    const _keep = new Set(_rank.slice(0,40).map(x => x[0]));
+    for (const p of periodList) {
+      const src = cByPeriodImpact[p]; if (!src) continue;
+      for (const im of Object.keys(src)) {
+        if (im === _OUT_OF_MAP || _keep.has(im)) continue;
+        src[_OTHERS] = (src[_OTHERS]||0) + src[im];
+        delete src[im];
+      }
+    }
+    impactTotals = {};
+    for (const p of periodList)
+      for (const im in (cByPeriodImpact[p]||{})) impactTotals[im] = (impactTotals[im]||0) + cByPeriodImpact[p][im];
+  }
+  const _tail = new Set([_OTHERS, _OUT_OF_MAP]);
   let sortedImpacts = Object.entries(impactTotals).filter(([im,c])=>c>0)
-        .sort((a,b)=> (a[0]===_OUT_OF_MAP) - (b[0]===_OUT_OF_MAP) || b[1]-a[1]).slice(0, 41);
+        .sort((a,b) => (_tail.has(a[0]) ? 1 : 0) - (_tail.has(b[0]) ? 1 : 0)
+                    || (a[0]===_OUT_OF_MAP) - (b[0]===_OUT_OF_MAP)
+                    || b[1]-a[1]);
   const _impGrand = Object.values(impactTotals).reduce((s,v)=>s+v,0);
   let _impRun = 0;
   for (const [impact, _ti] of sortedImpacts) {
     _impRun += _ti;
     const _cum = _impGrand > 0 ? (_impRun/_impGrand*100).toFixed(1) : '0.0';
     const _short = impact.length > 78 ? impact.slice(0,78) + '…' : impact;
-    const _isOut = (impact === _OUT_OF_MAP);
+    const _isOut = (impact === _OUT_OF_MAP) || (impact === _OTHERS);
     body += '<tr' + (_isOut ? ' style="background:#fef3c7"' : '') + '><td style="padding:3px 6px;font-size:11px' + (_isOut ? ';color:#92400e;font-style:italic' : '') + '" title="' + impact.replace(/"/g,'&quot;') + '">' + _short
           + '<span style="color:#8b5cf6;font-size:9px;margin-left:6px">cum ' + _cum + '%</span></td>';
     let lI = 0, pI = 0;
